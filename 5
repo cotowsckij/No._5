@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <Math.h>
+
+int main()
+{
+    float x1 = 15; // Задаем координаты точек
+    float x2 = 9;
+    float x3 = 6;
+    float y1 = 3;
+    float y2 = 18;
+    float y3 = 10;
+    //Вычисляем расстояние между точками
+    float a = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    float b = sqrt((x1 - x3) * (x1 - x3) + (y3 - y1) * (y3 - y1));
+    float c = sqrt((x2 - x3) * (x2 - x3) + (y3 - y2) * (y3 - y2));
+    float p = a + b + c; //Вычисляем периметр
+    float p2 = (a + b + c) / 2; //Вычисляем полупериметр для нахождения площади
+    float s = sqrt(p2 * (p2 - a) * (p2 - b) * (p2 - c)); //Вычисляем площадь
+    //Выводим полученные данные
+    printf_s("%f\n", p);
+    printf_s("%f", s);
+    return 0; //Выход
+}
