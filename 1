@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <cmath>
+
+int main()
+{
+	//Задаем координаты точек
+	float x1 = 5;
+	float x2 = 10;
+	float y1 = 56;
+	float y2 = 98;
+	float length;
+	length = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)); //Вычисляем расстояние между точками
+	printf_s("%f", length); //Вывод
+	return 0; //Конец
+}
